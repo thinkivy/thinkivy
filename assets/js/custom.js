@@ -162,6 +162,7 @@
 
 // ************************************************************************************************
 var passed = false;
+pass_count = 0;
 (function($) { 
 		
 		function count($this){
@@ -182,9 +183,12 @@ var passed = false;
 		    $('.stat-count').each(function(){
 		    	console.log ( 'Print1' );
 		    	var element = $(this);
-		    	if(element.offset().top > (y_scroll_pos) && !passed){
+		    	if(element.offset().top > (y_scroll_pos) && element.offset().top < (y_scroll_pos) + $(window).height() && !passed){
 		    		console.log ( 'Print2' );
-		    		passed = true;
+		    		pass_count += 1;
+		    		if (pass_count > 3){ 
+		    			passed = true;
+		    		}
 		    		$(this).data('count', parseInt($(this).html(), 10));
 					$(this).html('0');
 					count($(this));
