@@ -168,13 +168,13 @@ pass_count = 0;
 		function count($this){
 				console.log ( '#countstart' );
 				var current = parseInt($this.html(), 10);
-				current = current + 1;
+				current = current + 10;
 				$this.html(++current);
 				if (current > $this.data('count')){
 					$this.html($this.data('count'));
 				} 
 				else {
-					setTimeout(function(){count($this)}, 10);
+					setTimeout(function(){count($this)}, 5);
 
 				}
 			}
