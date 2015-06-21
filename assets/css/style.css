@@ -1,9 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
+/*@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
-
+*/
 @font-face {
 	font-family: 'Rockwell';
 	src: url('../fonts/rockwell.ttf') format ('ttf');
+
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/raleway.ttf') format ('ttf');
 
 }
 
@@ -21,7 +27,7 @@ body {
 	/*font: 300 14px/1.8 'Raleway', sans-serif;
 	color: #666;
 	overflow-x: hidden;*/
-	font-family: Raleway, "Century Gothic", Times, sans-serif;
+	font-family: 'Raleway', "Century Gothic", Times, sans-serif;
 	font-size: 1.5em;
 	font-style: normal;
 	text-transform: none;
@@ -83,7 +89,7 @@ a,
 /* ---------------------------------------------- */
 
 .think-text{
-	font-family: 'Rockwell', Raleway, "Century Gothic", Times, sans-serif;
+	font-family: 'Rockwell', 'Raleway', "Century Gothic", Times, sans-serif;
     text-transform: none;
     letter-spacing: 1px;
 	margin: 5px 0 5px;
@@ -99,7 +105,7 @@ a,
 	color: #800000;
 }
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 Raleway, sans-serif;
+	font: 700 40px/1.2 'Raleway', sans-serif;
 	text-transform: uppercase;
 	/*text-transform: none;*/
 	letter-spacing: 5px;
@@ -109,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 3em;
 	margin: 0 0 30px;
 }
 
@@ -207,7 +213,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .btn {
-	font-family: Raleway, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 1em;
@@ -304,11 +310,12 @@ textarea.form-control {
 }
 
 .pfblock-title{
-    font-weight: 800;
+    font-weight: 200;
+    
 }
 
 .pfblock-subtitle {
-	font-family: Raleway, "Century Gothic", Times, sans-serif;
+	font-family: 'Raleway', "Century Gothic", Times, sans-serif;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -375,7 +382,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	/*background: url(../images/paper.jpg);*/
+	/*background: url('../images/background.gif');*/
 	background-color: #f2f5df;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -390,8 +397,8 @@ textarea.form-control {
 
 
 
-.home-overlay {
-    background-color: rgba(44, 62, 80, 0.3);
+/*.home-overlay {
+    background-color: rgba(255, 255, 255, 0.8);
     background-image: url("../images/overlay.png");
     background-repeat: repeat;
     height: 100%;
@@ -400,7 +407,8 @@ textarea.form-control {
     top: 0;
     width: 100%;
     z-index: 0;
-}
+    opacity: 20%;
+}*/
 
 
 
@@ -465,14 +473,15 @@ textarea.form-control {
 }
 
 .start {
-	font-family: Raleway, "Century Gothic", Times, sans-serif;
+	font-family: 'Raleway', "Century Gothic", Times, sans-serif;
 	font-size: 1.5em;
 	font-style: normal;
 	text-transform: none;
 	margin: 15px 0;
+
 }
 
-.home-countries{
+#home-countries{
 	position:absolute ;
 	width: 100%;
 	top: 70%;
@@ -632,7 +641,7 @@ textarea.form-control {
 	border-radius: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: Raleway, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	
 }
 
@@ -1016,7 +1025,7 @@ figure.effect-bubba:hover p {
 	padding-top: 10px;
 	/*padding-left: 15%;*/
 	padding-bottom: 10px;
-	font-family: Raleway, "Century Gothic", Times, sans-serif;
+	font-family: 'Raleway', "Century Gothic", Times, sans-serif;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -1050,7 +1059,7 @@ figure.effect-bubba:hover p {
 
 }
 
-.student-pictures{
+#student-pictures{
 	padding-right: 0px;
 	padding-left: 0px;
 }
@@ -1247,23 +1256,160 @@ figure.effect-bubba:hover p {
 	padding-left: 10px;
 	margin-right: 20px;
 	padding-bottom: 10px;
-	font-family: Raleway, "Century Gothic", Times, sans-serif;
+	font-family: 'Raleway', "Century Gothic", Times, sans-serif;
 	font-style: normal;
 	font-size: 1.2em;
 	text-align: left;
-	color: rgba(255, 255, 255, .4);
+	color: rgba(255, 255, 255, .8);
 }
 
 .student-quote-text footer{
 	text-align: right;
 	color: #333;
 	font-size: 1em;
-	color: rgba(255, 255, 255, .2);
+	color: rgba(255, 255, 255, .4);
 }
 
 .student-quote-text footer:before {
 	content: '― ';
 
+}
+
+#connect-intro .pfblock-subtitle span{
+	font-style: bold;
+}
+.connect-point{
+	margin: 20px 0px;
+}
+.connect-point i{
+	color: #9a0000;
+	display: inline;
+}
+
+.connect-point .connect-point-heading{
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+
+
+
+.connect-point .connect-point-text{
+	padding-left: 40px;
+	font-size: 1.2em;
+}
+
+.connect-point .connect-point-text li{
+	margin: 10px;
+}
+
+#connect-how{
+	background-color: rgba(255,255,255,1);
+}
+
+#connect-online{
+	padding-bottom: 100px;
+}
+
+
+.chevron:first-child {
+    margin-top: 20px;
+}
+
+.chevron {
+	position: relative;
+	text-align: center;
+	padding: 12px 0;
+  	width: 400px;
+ 	margin: 0 auto;
+ 	margin-bottom: 5px;
+	color: #fff;
+	margin-bottom:10px;
+  
+}
+
+.chevron:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 51%;
+	-webkit-transform: skew(0deg, 8deg);
+	-moz-transform: skew(0deg, 8deg);
+	-ms-transform: skew(0deg, 8deg);
+	-o-transform: skew(0deg, 8deg);
+	transform: skew(0deg, 8deg);
+	background-color: #9a0000;
+	
+  
+  -moz-box-shadow: 0 0 0 2px #9a0000;
+	-webkit-box-shadow: 0 0 0 2px #9a0000;
+	box-shadow: 0 0 0 2px #9a0000;
+  
+  /*border-left: 1px dashed #fff;
+  border-top: 1px dashed #fff;
+  border-bottom: 1px dashed #fff;*/
+}
+.chevron:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 50%;
+	-webkit-transform: skew(0deg, -8deg);
+	-moz-transform: skew(0deg, -8deg);
+	-ms-transform: skew(0deg, -8deg);
+	-o-transform: skew(0deg, -8deg);
+	transform: skew(0deg, -8deg);
+	background-color: #9a0000;
+  
+  -moz-box-shadow: 0 0 0 2px #9a0000;
+	-webkit-box-shadow: 0 0 0 2px #9a0000;
+	box-shadow: 0 0 0 2px #9a0000;
+  
+/*  border-right: 1px dashed #fff;
+  border-top: 1px dashed #fff;
+  border-bottom: 1px dashed #fff;*/
+}
+/*.chevron [class^=dash]{
+	width: 100%;
+	height: 0px;
+	position: absolute;
+	z-index: 1;
+}*/
+.chevron .chevron-inner{
+	position: relative;
+	z-index: 2;
+	padding: 30px 20px 20px;
+	margin-bottom: 5px;
+	color: rgba(255,255,255,.9);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	font-size: 18px;
+}
+.chevron-content{
+	padding: 0 10px;
+}
+
+.chevron h2{
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-size: 1.2em;
+	font-weight: 100;
+	letter-spacing: 1px;
+
+}
+
+#connect-info .connect-point-heading,
+#connect-how .connect-point-heading{
+	font-family: 'Raleway';
+}
+
+#connect-info{
+	padding-top: 0px;
 }
 
 
