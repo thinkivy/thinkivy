@@ -153,7 +153,18 @@
             
             	return false;
 			});
+		
+// -----------I DUNNO IF THIS WORKS ----------
+		$(function() {
+		  // Setup drop down menu
+		  $('.dropdown-toggle').dropdown();
 
+		  // Fix input element click problem
+		  $('.dropdown input, .dropdown label').click(function(e) {
+		    e.stopPropagation();
+		  });
+		})
+// -----------I DUNNO IF THIS WORKS ----------
 
 
 	});
@@ -199,3 +210,4 @@ pass_count = 0;
 		});
 
 })(jQuery);
+
