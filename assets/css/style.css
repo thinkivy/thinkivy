@@ -1425,9 +1425,18 @@ figure.effect-bubba:hover p {
 }
 
 #connect-info .info-point-heading,
-#connect-how .info-point-heading{
+#connect-how .info-point-heading,
+#testprep-intro .info-point-heading{
 	font-family: 'Raleway';
 }
+
+#testprep-intro .info-point{
+	
+	margin-bottom: 30px;
+}
+
+
+
 
 #connect-info{
 	padding-top: 0px;
@@ -1435,7 +1444,7 @@ figure.effect-bubba:hover p {
 
 
 .info-icon{
-	margin: 20px 0px;
+	margin: 5px 0px;
 	text-align: center;
 }
 .info-icon i{
@@ -1458,4 +1467,51 @@ figure.effect-bubba:hover p {
 
 .info-icon .info-icon-text li{
 	margin: 10px;
+}
 
+#testprep-intro{
+	position: relative;
+}
+
+#testprep-intro .info-point{
+	border-right: 1px solid #6d0000;
+
+}
+
+#testprep-login{
+	
+	padding-right: 10%;
+	padding-left: 10%;
+	
+
+}
+
+#testprep-login .login-buttons{
+	display:block;
+	margin-top: 30%;
+	margin-bottom: 30%;
+
+}
+
+#testprep-table{
+	padding-right: 15%;
+	padding-left: 15%;
+}
+
+#testprep-table .table{
+	font-size: 1.2em;
+}
+
+
+#testprep-table .table tr > td:first-child { 
+	font-weight: bold;
+} 
+
+#testprep-table .table tbody > tr > td,
+#testprep-table .table thead > tr > th{ 
+	text-align: center;
+}
+
+#testprep-table .table tbody > tr > td:first-child{ 
+	text-align: left;
+}
