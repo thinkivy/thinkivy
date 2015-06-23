@@ -442,13 +442,13 @@ textarea.form-control {
 	z-index: -1;
 	}*/
 
-.home-btn > .btn {
+.think-btn > .btn {
     background: #800000;
     color: #ffffff;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-.home-btn > .btn:hover{
+.think-btn > .btn:hover{
     background: #9a0000;
 
 
@@ -700,6 +700,27 @@ textarea.form-control {
 	background: #222;
 }
 
+.nav .divider-vertical{
+	color: #222;
+}
+
+
+
+.login-form{
+	padding: 20px 40px;
+	text-transform: none;
+	white-space: nowrap;
+
+}
+
+.login-form > .btn{
+	left: auto;
+	right: auto;
+}
+
+.login-form .checkbox{
+	padding-right: 150px; /*FIX THIS IS NOT VERY DYNAMIC; -- MAKES LOGIN BOX WIDER*/
+}
 /* ---------------------------------------------- /*
  * Scroll to top
 /* ---------------------------------------------- */
@@ -1083,13 +1104,13 @@ figure.effect-bubba:hover p {
 /***** Enroll *****/
 /*-----------------------*/
 
-.enroll-btn > .btn {
+.think-btn > .btn {
     background: #800000;
     color: #ffffff;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-.enroll-btn > .btn:hover{
+.think-btn > .btn:hover{
     background: #9a0000;
 
 
@@ -1275,18 +1296,18 @@ figure.effect-bubba:hover p {
 
 }
 
-#connect-intro .pfblock-subtitle span{
-	font-style: bold;
+.info-intro .pfblock-subtitle span{
+	font-style: italic;
 }
-.connect-point{
+.info-point{
 	margin: 20px 0px;
 }
-.connect-point i{
+.info-point i{
 	color: #9a0000;
 	display: inline;
 }
 
-.connect-point .connect-point-heading{
+.info-point .info-point-heading{
 	text-transform: uppercase;
 	font-size: 2em;
 	font-weight: lighter;
@@ -1295,12 +1316,12 @@ figure.effect-bubba:hover p {
 
 
 
-.connect-point .connect-point-text{
+.info-point .info-point-text{
 	padding-left: 40px;
 	font-size: 1.2em;
 }
 
-.connect-point .connect-point-text li{
+.info-point .info-point-text li{
 	margin: 10px;
 }
 
@@ -1403,13 +1424,96 @@ figure.effect-bubba:hover p {
 
 }
 
-#connect-info .connect-point-heading,
-#connect-how .connect-point-heading{
+#connect-info .info-point-heading,
+#connect-how .info-point-heading,
+#testprep-intro .info-point-heading{
 	font-family: 'Raleway';
 }
+
+#testprep-intro .info-point{
+	
+	margin-bottom: 30px;
+}
+
+
+
 
 #connect-info{
 	padding-top: 0px;
 }
 
 
+.info-icon{
+	margin: 5px 0px;
+	text-align: center;
+}
+.info-icon i{
+	color: #9a0000;
+	display:block;
+}
+
+.info-icon .info-icon-heading{
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: lighter;
+	letter-spacing: 1px;
+
+}
+
+
+
+.info-icon .info-icon-text{
+	font-size: 1.2em;
+}
+
+.info-icon .info-icon-text li{
+	margin: 10px;
+	
+}
+
+#testprep-intro{
+	position: relative;
+}
+
+#testprep-intro .info-point{
+	border-right: 1px solid #6d0000;
+
+}
+
+#testprep-login{
+	
+	padding-right: 10%;
+	padding-left: 10%;
+	
+
+}
+
+#testprep-login .login-buttons{
+	display:block;
+	margin-top: 30%;
+	margin-bottom: 30%;
+
+}
+
+#testprep-table{
+	padding-right: 15%;
+	padding-left: 15%;
+}
+
+#testprep-table .table{
+	font-size: 1.2em;
+}
+
+
+#testprep-table .table tr > td:first-child { 
+	font-weight: bold;
+} 
+
+#testprep-table .table tbody > tr > td,
+#testprep-table .table thead > tr > th{ 
+	text-align: center;
+}
+
+#testprep-table .table tbody > tr > td:first-child{ 
+	text-align: left;
+}
