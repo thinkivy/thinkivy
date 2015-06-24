@@ -105,7 +105,7 @@ a,
 	color: #800000;
 }
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 'Raleway', sans-serif;
+	font: 700 40px/1.2 'Raleway', serif;
 	text-transform: uppercase;
 	/*text-transform: none;*/
 	letter-spacing: 5px;
@@ -1468,7 +1468,7 @@ figure.effect-bubba:hover p {
 
 .info-icon .info-icon-text li{
 	margin: 10px;
-	
+
 }
 
 #testprep-intro{
@@ -1516,4 +1516,5 @@ figure.effect-bubba:hover p {
 
 #testprep-table .table tbody > tr > td:first-child{ 
 	text-align: left;
+	width: 20%;
 }
