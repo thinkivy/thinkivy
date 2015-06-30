@@ -48,6 +48,9 @@ a:hover {
 	color: #999;
 }
 
+p {
+	font-size: 1.2em;
+}
 /* ---------------------------------------------- /*
  * Transition elsements
 /* ---------------------------------------------- */
@@ -97,6 +100,7 @@ a,
 	/*font-size: 6em;*/
 	display: inline;
 	color: rgba(0,0,0,1);
+	
 
 }
 
@@ -105,7 +109,7 @@ a,
 	color: #800000;
 }
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 'Raleway', sans-serif;
+	font: 700 40px/1.2 'Raleway', serif;
 	text-transform: uppercase;
 	/*text-transform: none;*/
 	letter-spacing: 5px;
@@ -120,9 +124,10 @@ h2 {
 }
 
 h3 {
-	font-size: 13px;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: lighter;
 	letter-spacing: 1px;
-	margin: 0 0 5px;
 }
 
 h4 {
@@ -382,7 +387,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	/*background: url('../images/background.gif');*/
+	background: url('../images/background.gif');
 	background-color: #f2f5df;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -397,8 +402,8 @@ textarea.form-control {
 
 
 
-/*.home-overlay {
-    background-color: rgba(255, 255, 255, 0.8);
+.home-overlay {
+    background-color: rgba(255, 255, 255, 0.5);
     background-image: url("../images/overlay.png");
     background-repeat: repeat;
     height: 100%;
@@ -408,7 +413,7 @@ textarea.form-control {
     width: 100%;
     z-index: 0;
     opacity: 20%;
-}*/
+}
 
 
 
@@ -518,6 +523,7 @@ textarea.form-control {
 	text-transform: uppercase;
 	margin: 0 0 15px;
 	padding: 0;
+	font-family: 'Raleway', sans-serif
 }
 
 /* ---------------------------------------------- /*
@@ -888,10 +894,12 @@ textarea.form-control {
 	min-height: 100%;
 	max-width: 100%;
 	opacity: 0.8;
+	margin: 0 auto;
+
 }
 
 .grid figure figcaption {
-	padding: 2em;
+	padding: 1em .5em;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.25em;
@@ -925,11 +933,16 @@ textarea.form-control {
 
 .grid figure h2 {
 	word-spacing: -0.15em;
-	font-weight: 300;
+	font-weight: 800;
+	display: block;
+	background-color: rgba(0,0,0,.7);
+	
 }
 
 .grid figure h2 span {
-	font-weight: 800;
+	display:block;
+	font-weight: 300;
+	font-size: .8em;
 }
 
 .grid figure h2,
@@ -940,33 +953,38 @@ textarea.form-control {
 .grid figure p {
 	letter-spacing: 1px;
 	font-size: 68.5%;
+
 }
 
 /*---------------*/
 /***** Bubba *****/
 /*---------------*/
 
-figure.effect-bubba {
-	background: #9e5406;
+figure.effect-bubba{
+	background:#fff;
+}
+
+figure.effect-bubba:hover {
+	background: #6d0000;
 }
 
 figure.effect-bubba img {
-	opacity: 0.7;
+	opacity: 1.0;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
 
 figure.effect-bubba:hover img {
-	opacity: 0.4;
+	opacity: 0.2;
 }
 
 figure.effect-bubba figcaption::before,
 figure.effect-bubba figcaption::after {
 	position: absolute;
 	top: 30px;
-	right: 30px;
+	right: 0px;
 	bottom: 30px;
-	left: 30px;
+	left: 0px;
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -988,21 +1006,27 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
-	padding-top: 10%;
+	margin-top: 10%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,-20px,0);
 	transform: translate3d(0,-20px,0);
     color: #fff;
+    background-color: rgba(0,0,0,.7);
+    margin-left: -100%;
+    margin-right:-100%;
+
+   
 }
 
 figure.effect-bubba p {
-	padding: 20px 2.5em;
+	padding: 20px 0em;
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(0,20px,0);
 	transform: translate3d(0,20px,0);
+
 }
 
 figure.effect-bubba:hover figcaption::before,
@@ -1010,6 +1034,8 @@ figure.effect-bubba:hover figcaption::after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+
+
 }
 
 figure.effect-bubba:hover h2,
@@ -1017,6 +1043,7 @@ figure.effect-bubba:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+	background-color: rgba(0,0,0,0);
 }
 
 /*-----------------------*/
@@ -1030,26 +1057,40 @@ figure.effect-bubba:hover p {
 	border-left: 1px solid #6d0000;
 	display: table-cell;
 	text-align: center;
+	overflow: hidden;
+}
+
+#camp-curriculum .platform,
+#insight-platforms .platform{
+	border-left: none;
 }
 
 .platform h2{
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-size: 3em;
+	font-weight: lighter;
+	letter-spacing: 1px;
 }
 
 .platform-title{
 	text-align: center;
+
 }
 
 .platform-text{
 	padding-top: 10px;
 	/*padding-left: 15%;*/
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	font-family: 'Raleway', "Century Gothic", Times, sans-serif;
 	font-style: normal;
 	font-size: 18px;
 }
+
+
 
 .platform-btn {
 	text-align: center;
@@ -1080,7 +1121,7 @@ figure.effect-bubba:hover p {
 
 }
 
-#student-pictures{
+.student-pictures{
 	padding-right: 0px;
 	padding-left: 0px;
 }
@@ -1296,7 +1337,7 @@ figure.effect-bubba:hover p {
 
 }
 
-.info-intro .pfblock-subtitle span{
+.connect-intro .pfblock-subtitle span{
 	font-style: italic;
 }
 .info-point{
@@ -1312,6 +1353,7 @@ figure.effect-bubba:hover p {
 	font-size: 2em;
 	font-weight: lighter;
 	letter-spacing: 1px;
+	margin-bottom:10px;
 }
 
 
@@ -1468,32 +1510,45 @@ figure.effect-bubba:hover p {
 
 .info-icon .info-icon-text li{
 	margin: 10px;
-	
+
 }
 
-#testprep-intro{
-	position: relative;
+.two-side-intro{
+	position:relative;
+	margin-bottom: 30px;
+
 }
 
-#testprep-intro .info-point{
+.two-side-left{
+	height: 300px;
 	border-right: 1px solid #6d0000;
+	overflow: auto;
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
 
 }
 
-#testprep-login{
-	
+.two-side-right-inner{
+
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+}
+
+.two-side-right{
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+
 	padding-right: 10%;
 	padding-left: 10%;
-	
+	height: 300px;
 
 }
 
-#testprep-login .login-buttons{
-	display:block;
-	margin-top: 30%;
-	margin-bottom: 30%;
 
-}
+
 
 #testprep-table{
 	padding-right: 15%;
@@ -1516,4 +1571,60 @@ figure.effect-bubba:hover p {
 
 #testprep-table .table tbody > tr > td:first-child{ 
 	text-align: left;
+	width: 20%;
+
+}
+
+.block-heading{
+	background-color: #800000;
+	height: 300px;
+	padding:0px;
+	overflow: hidden;
+/*	text-align: center;
+	position: relative;*/
+
+}
+
+.block-heading h2{
+	/*color: rgba(255,255,255,1);
+	text-transform: none;
+	font-family: 'Raleway',sans-serif;
+	font-size: 2em;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	position: absolute;
+  	top: 50%;
+ 	 left: 50%;
+ 	 transform: translate(-50%, -50%)*/
+}
+
+.block-heading img{
+	width: 100%;
+	height: auto;
+	/*max-height: 300px;*/
+	
+}
+
+
+.block-text{
+	height: 300px;
+	text-align: left;
+	padding-left: 5%;
+	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+
+	
+}
+
+.block-text p{
+	font-family: 'Raleway', "Century Gothic", Times, sans-serif;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.gallery-column{
+	padding-right: 0px;
+	padding-left:0px;
 }
