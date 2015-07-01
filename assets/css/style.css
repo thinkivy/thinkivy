@@ -523,7 +523,8 @@ textarea.form-control {
 	text-transform: uppercase;
 	margin: 0 0 15px;
 	padding: 0;
-	font-family: 'Raleway', sans-serif
+	font-family: 'Raleway', sans-serif;
+	font-size:1em;
 }
 
 /* ---------------------------------------------- /*
