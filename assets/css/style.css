@@ -387,7 +387,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url('../images/background.gif');
+	background: url('../images/background.jpg');
 	background-color: #f2f5df;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -398,6 +398,9 @@ textarea.form-control {
 			background-size: cover;
 	/*margin-top: -15px;*/
 	padding: 0;
+	display: flex;
+  	justify-content: center;
+    align-items: center;
 }
 
 
@@ -417,7 +420,7 @@ textarea.form-control {
 
 
 
-.home-logo {
+/*.home-logo {
     position: absolute;
 	left: 30%;
 	
@@ -425,7 +428,7 @@ textarea.form-control {
 	height: auto;
 	max-width: 40%;
 
-	/*margin-left: -100px;*/
+	margin-left: -100px;
 	display: block;
 	z-index: 10;
     text-align: center;
@@ -433,7 +436,7 @@ textarea.form-control {
 
 .home-logo span{
     position: relative;
-    }
+    }*/
 
 /*.home-logo::after {
 	content: ""
@@ -460,16 +463,17 @@ textarea.form-control {
 }
 
 .intro {
-	position: absolute;
-	width: 100%;
+	position: relative;
+/*	width: 100%;
 	top: 50%;
-	left: 0;
+	left: 0;*/
 	text-align: center;
-	-webkit-transform: translate(0%, -50%);
+
+/*	-webkit-transform: translate(0%, -50%);
 	   -moz-transform: translate(0%, -50%);
 		-ms-transform: translate(0%, -50%);
 		 -o-transform: translate(0%, -50%);
-			transform: translate(0%, -50%);
+			transform: translate(0%, -50%);*/
 	padding: 0 15px;
 }
 
@@ -487,17 +491,16 @@ textarea.form-control {
 }
 
 #home-countries{
-	position:absolute ;
-	width: 100%;
+	position:relative;
+/*	width: 100%;
 	top: 70%;
-	/*left: 0;*/
-/*	margin-right: 470px;
-	margin-left: 470px;*/
+
+
 	-webkit-transform: translate(0%, -50%);
 	   -moz-transform: translate(0%, -50%);
 		-ms-transform: translate(0%, -50%);
 		 -o-transform: translate(0%, -50%);
-			transform: translate(0%, -50%);
+			transform: translate(0%, -50%);*/
 	
 }
 
