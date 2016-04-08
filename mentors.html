@@ -162,9 +162,9 @@ a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=Im
             <a class="icon-menu" id="mobileMenu"></a>
 
             <!--MAIN NAVIGATION-->
-            <!-- <div id="desktopNav" data-content-field="navigation-mainNav" data-annotation-alignment="bottom left"> -->
+            <div id="desktopNav" data-content-field="navigation-mainNav" data-annotation-alignment="bottom left">
 
-  <!-- <nav class="main-nav">
+   <nav class="main-nav">
       <div class="nav-wrapper">
         <ul class="cf">
             <li class="index-collection folder">
@@ -179,9 +179,9 @@ a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=Im
             <li class="page-collection">
               <a href="connect.html"><span>Mentorship</span></a>
             </li>
-            <li class="page-collection">>
+            <li class="page-collection">
               <a href="enroll.html"><span>Enroll</span></a>
-            </li> -->
+            </li>
             <!-- <li class="folders-collection folder">
                   <div class="folder-parent">
                     <a aria-haspopup="true"><span>IVY Mentors</span></a>
@@ -262,20 +262,116 @@ a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=Im
                     </div>
                   </div>
 
-            </li> -->
-  <!--    </ul>
+            </li>
+     </ul>
     </div>
-  </nav> -->
+  </nav>
 
-            <!-- </div> -->
+            </div>
             <!-- Navigation start -->
 
-          		<header class="header">
+            <style>
+            /* ---------------------------------------------- /*
+             * Navigation
+            /* ---------------------------------------------- */
 
+            .header {
+            	border-bottom: 1px solid #f5f5f5;
+            	position: relative;
+            	width: 100%;
+            	z-index: 1000;
+            }
+
+            .navbar-custom {
+            	border: 0;
+            	border-radius: 0;
+            	margin: 0;
+            	text-transform: uppercase;
+            	font-family: 'Raleway', sans-serif;
+
+            }
+
+            .navbar-custom,
+            .navbar-custom .dropdown-menu {
+            	background: #fff;
+            	padding: 0;
+            }
+
+            .navbar-custom .navbar-brand,
+            .navbar-custom .navbar-nav > li > a,
+            .navbar-custom .navbar-nav .dropdown-menu > li > a {
+            	font-size: 11px;
+            	letter-spacing: 3px;
+            	color: #222;
+            }
+
+            .navbar .navbar-brand #imageBrand{
+                height: 20px; /* you can use % */
+                margin-top : 0px;
+                width: auto;
+            }
+
+            .navbar-custom .nav li.active,
+            .navbar-custom .nav li a:hover,
+            .navbar-custom .nav li a:focus,
+            .navbar-custom .navbar-nav > li.active a {
+            	background: none;
+            	outline: 0;
+            	color: #800000;
+            }
+
+            .navbar-custom .navbar-brand {
+            	font-weight: 700;
+            	font-size: 22px;
+                font-family: Lobster, cursive;
+            }
+
+            .navbar-custom .dropdown-menu {
+            	border: 0;
+            	border-top: 2px solid #800000;
+            	border-radius: 0;
+            }
+
+            .navbar-custom .dropdown-menu > li > a {
+            	padding: 10px 20px;
+            }
+
+            .navbar-custom .nav .open > a,
+            .navbar-custom .dropdown-menu > li > a:hover,
+            .navbar-custom .dropdown-menu > li > a:focus {
+            	background: #f5f5f5;
+            }
+
+            .navbar-custom .navbar-toggle .icon-bar {
+            	background: #222;
+            }
+
+            .nav .divider-vertical{
+            	color: #222;
+            }
+
+            .btn,
+            .form-control,
+            .form-control:hover,
+            .form-control:focus,
+            .navbar-custom .dropdown-menu {
+            	-webkit-box-shadow: none;
+            			box-shadow: none;
+            }
+
+
+            </style>
+
+            <!-- Preloader -->
+
+          	<div id="preloader">
+          		<div id="status"></div>
+          	</div>
+
+          	<!-- Navigation start -->
+          		<!-- <header class="header">
           		<nav class="navbar navbar-custom" role="navigation">
-
           			<div class="container">
-
           				<div class="navbar-header">
           					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
           						<span class="sr-only">Toggle navigation</span>
@@ -285,21 +381,18 @@ a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=Im
           					</button>
           					<a class="navbar-brand" href="index.html"><img id = "imageBrand" src = "assets/images/logo.png"></a>
           				</div>
-
           				<div class="collapse navbar-collapse" id="custom-collapse">
           					<ul class="nav navbar-nav navbar-left">
-
           						<li><a href="#Mission">About</a></li>
           						<li><a href="http://bit.ly/ThinkIVYErikaRobinson">Erika Robinson</a></li>
           						<li><a href="mentors.html">IVY Mentors</a></li>
           						<li><a href="connect.html">Mentorship</a></li>
-          						<!-- <li><a href="camp.html">ThinkBIG Camps</a></li> -->
           						<li><a href="enroll.html">Enroll</a></li>
           					</ul>
           				</div>
-          			</div><!-- .container -->
+          			</div>
           		</nav>
-          	</header>
+          	</header> -->
           	<!-- Navigation end -->
 
 
@@ -493,7 +586,87 @@ a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=Im
   Boston College<br>
   Boston University<br>
   New York University
-</div></div></div></div></div><div class="row sqs-row" id="yui_3_17_2_1_1460094690680_1652"><div class="col sqs-col-4 span-4" id="yui_3_17_2_1_1460094690680_1665"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_311546"><div class="sqs-block-content" id="yui_3_17_2_1_1460094690680_1664"><h1 class="text-align-center" id="yui_3_17_2_1_1460094690680_1663"><strong id="yui_3_17_2_1_1460094690680_1662">â‡£</strong></h1></div></div></div><div class="col sqs-col-4 span-4" id="yui_3_17_2_1_1460094690680_1651"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_326804"><div class="sqs-block-content" id="yui_3_17_2_1_1460094690680_1650"><h1 class="text-align-center" id="yui_3_17_2_1_1460094690680_1649"><strong id="yui_3_17_2_1_1460094690680_1648">â‡£</strong></h1></div></div></div><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_327994"><div class="sqs-block-content"><h1 class="text-align-center"><strong>â‡£</strong></h1></div></div></div></div><div class="row sqs-row"><div class="col sqs-col-3 span-3"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1398388402798_180911"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-2 span-2"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_317478"><div class="sqs-block-content"><h1 class="text-align-center"><strong>â‡£</strong></h1></div></div></div><div class="col sqs-col-2 span-2"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1398388402798_378573"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-2 span-2"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_325667"><div class="sqs-block-content"><h1 class="text-align-center"><strong>â‡£</strong></h1></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1398388402798_176092"><div class="sqs-block-content">&nbsp;</div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_321684"><div class="sqs-block-content"><h1 class="text-align-center"><strong>â‡£</strong></h1></div></div><div class="row sqs-row" id="yui_3_17_2_1_1460089866098_155"><div class="col sqs-col-4 span-4" id="yui_3_17_2_1_1460089866098_154"><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_10_1_1_1398361580605_1110827"><div class="sqs-block-content" id="yui_3_17_2_1_1460089866098_153">
+</div></div></div></div></div>
+<div class="row sqs-row" id="yui_3_17_2_1_1460094690680_1652">
+  <div class="col sqs-col-4 span-4" id="yui_3_17_2_1_1460094690680_1665">
+    <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_311546">
+      <div class="sqs-block-content" id="yui_3_17_2_1_1460094690680_1664">
+        <h1 class="text-align-center" id="yui_3_17_2_1_1460094690680_1663">
+          <strong id="yui_3_17_2_1_1460094690680_1662"></strong>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="col sqs-col-4 span-4" id="yui_3_17_2_1_1460094690680_1651">
+    <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_326804">
+      <div class="sqs-block-content" id="yui_3_17_2_1_1460094690680_1650">
+        <h1 class="text-align-center" id="yui_3_17_2_1_1460094690680_1649">
+          <strong id="yui_3_17_2_1_1460094690680_1648"></strong>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="col sqs-col-4 span-4">
+    <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_327994">
+      <div class="sqs-block-content"><h1 class="text-align-center">
+        <strong></strong>
+      </h1>
+    </div>
+  </div>
+</div>
+</div>
+<div class="row sqs-row">
+  <div class="col sqs-col-3 span-3">
+    <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1398388402798_180911">
+      <div class="sqs-block-content">
+      </div>
+    </div>
+  </div>
+  <div class="col sqs-col-2 span-2">
+    <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_317478">
+    <div class="sqs-block-content">
+      <h1 class="text-align-center">
+        <strong>
+        </strong>
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="col sqs-col-2 span-2">
+  <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1398388402798_378573">
+    <div class="sqs-block-content">
+    </div>
+  </div>
+</div>
+<div class="col sqs-col-2 span-2">
+  <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_325667">
+    <div class="sqs-block-content">
+      <h1 class="text-align-center">
+        <strong>
+        </strong>
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="col sqs-col-3 span-3">
+  <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1398388402798_176092">
+    <div class="sqs-block-content">
+    </div>
+  </div>
+</div>
+</div>
+<div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1398388402798_321684">
+  <div class="sqs-block-content">
+    <h1 class="text-align-center">
+      <strong>
+      </strong>
+    </h1>
+  </div>
+</div>
+<div class="row sqs-row" id="yui_3_17_2_1_1460089866098_155">
+  <div class="col sqs-col-4 span-4" id="yui_3_17_2_1_1460089866098_154">
+    <div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_10_1_1_1398361580605_1110827">
+      <div class="sqs-block-content" id="yui_3_17_2_1_1460089866098_153">
 	<div class="image-block-outer-wrapper layout-caption-hidden " id="yui_3_17_2_1_1460089866098_152">
 
 		<div class="intrinsic" style="max-width:500.0px;" id="yui_3_17_2_1_1460089866098_151">
