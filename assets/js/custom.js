@@ -16,7 +16,7 @@
 		/* ---------------------------------------------- */
 
 		$('a[href*=#]').bind("click", function(e){
-           
+
 			var anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $(anchor.attr('href')).offset().top
@@ -45,10 +45,10 @@
 			offset: 70
 		})
 
-        
+
         /* ---------------------------------------------- /*
 		 * Skills
-        /* ---------------------------------------------- */    
+        /* ---------------------------------------------- */
         //var color = $('#home').css('backgroundColor');
 
         $('.skills').waypoint(function(){
@@ -64,12 +64,12 @@
                 });
             });
         },{offset:'80%'});
-        
-        
+
+
         /* ---------------------------------------------- /*
 		 * Quote Rotator
 		/* ---------------------------------------------- */
-       
+
 			$( function() {
 				/*
 				- how to call the plugin:
@@ -90,16 +90,19 @@
 				$( '#cbp-qtrotator' ).cbpQTRotator();
 
 			} );
-		
-        
+
+
 		/* ---------------------------------------------- /*
 		 * Home BG
 		/* ---------------------------------------------- */
 
-		$(".screen-height").height($(window).height());
+		// $(".screen-height").height($(window).height());
+
+		$(".screen-height").(typeof window.outerHeight != 'undefined')?Math.max(window.outerHeight, $(window).height()):$(window).height();
 
 		$(window).resize(function(){
-			$(".screen-height").height($(window).height());
+			$(".screen-height").(typeof window.outerHeight != 'undefined')?Math.max(window.outerHeight, $(window).height()):$(window).height();
+			// $(".screen-height").height($(window).height());
 		});
 
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
@@ -146,14 +149,14 @@
 				response.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
 			}
 
-			else {				
+			else {
 				    $('#contact-form .ajax-hidden').fadeOut(500);
 				    response.html("Message Sent. I will contact you asap. Thanks.").fadeIn(500);
 				}
-            
+
             	return false;
 			});
-		
+
 // -----------I DUNNO IF THIS WORKS ----------
 		$(function() {
 		  // Setup drop down menu
@@ -174,8 +177,8 @@
 // ************************************************************************************************
 var passed = false;
 pass_count = 0;
-(function($) { 
-		
+(function($) {
+
 		function count($this){
 				console.log ( '#countstart' );
 				var current = parseInt($this.html(), 10);
@@ -183,7 +186,7 @@ pass_count = 0;
 				$this.html(++current);
 				if (current > $this.data('count')){
 					$this.html($this.data('count'));
-				} 
+				}
 				else {
 					setTimeout(function(){count($this)}, 5);
 
@@ -197,7 +200,7 @@ pass_count = 0;
 		    	if(element.offset().top > (y_scroll_pos) && element.offset().top < (y_scroll_pos) + $(window).height() && !passed){
 		    		console.log ( 'Print2' );
 		    		pass_count += 1;
-		    		if (pass_count > 3){ 
+		    		if (pass_count > 3){
 		    			passed = true;
 		    		}
 		    		$(this).data('count', parseInt($(this).html(), 10));
@@ -210,4 +213,3 @@ pass_count = 0;
 		});
 
 })(jQuery);
-
