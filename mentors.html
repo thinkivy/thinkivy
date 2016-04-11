@@ -52,6 +52,18 @@ a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=Im
       Y.Squarespace.FollowButtonUtils = {};
       Y.Squarespace.FollowButtonUtils.renderAll = function(){};
     </script>
+    <!-- Custom styles CSS -->
+    <link href="assets/css/preloader.css" rel="stylesheet" media="screen">
+    <link href="assets/css/social.css" rel="stylesheet" media="screen">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+    <!-- Javascript files -->
+
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
   </head>
   <body id="collection-53651c17e4b03c13e876d16d" class="event-excerpts event-list-date event-list-time event-list-address event-icalgcal-links  events-layout-columns events-width-full gallery-design-slideshow aspect-ratio-auto lightbox-style-dark gallery-navigation-bullets gallery-info-overlay-show-on-hover gallery-arrow-style-no-background gallery-show-arrows gallery-auto-crop     parallax-scrolling  first-index-image-fullscreen index-image-height-two-thirds   title--description-alignment-left title--description-position-over-image title-background  description-button-style-solid description-button-corner-style-square  blog-layout-columns blog-width-full    product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square  show-product-price show-product-item-nav product-social-sharing   opentable-style-light newsletter-style-dark small-button-style-solid small-button-shape-pill medium-button-style-raised medium-button-shape-square large-button-style-outline large-button-shape-pill button-style-default button-corner-style-square tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-53651c17e4b03c13e876d16d collection-type-index collection-layout-default view-list has-banner-image mobile-styles-disabled">
     <!-- Preloader -->
@@ -128,30 +140,48 @@ a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=Im
      <li id="parallax-nav-item-harvard-mentors">
 
 <style>
- .nav-title{
-   color: black;
-   position: absolute;
-    right: 5px;
-    opacity: 0;
-    font-size: 13px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    font-family: "Source Sans Pro";
-    letter-spacing: 3px;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    margin-top: -11px;
-    padding: 0px 0px 0px 0px;
-    line-height: 32px;
- }
+   .nav-title{
+     color: black;
+     position: absolute;
+      right: 15px;
+      opacity: 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      font-family: "Source Sans Pro";
+      letter-spacing: 3px;
+      font-weight: 400;
+      font-style: bold;
+      text-decoration: none;
+      margin-top: -11px;
+      padding: 0px 0px 0px 0px;
+      line-height: 32px;
+   }
 
- .nav-title {
-    visibility: visible !important;
-    opacity: 1 !important;
-    color: #000000 !important;
-    margin-right: 20px !important;
-}
+   .nav-title {
+      visibility: visible !important;
+      opacity: 1 !important;
+      color: #000000 !important;
+      margin-right: 10px !important;
+      margin-left: 10px !important;
+  }
+
+  .nav-title:hover {
+      visibility: visible !important;
+      color: maroon !important;
+      background-color: #fff !important;
+      margin-right: 10px !important;
+      margin-left: 10px !important;
+  }
+  #parallax-nav li:hover span.nav-title {
+      right: 20px;
+      opacity: 1;
+      z-index: 51;
+      padding-right: 10px;
+      padding-left: 10px;
+      visibility: visible;
+  }
+
 </style>
 
        <a href="#harvard-mentors"><span class="nav-title">Harvard Mentors</span></a></li>      <li id="parallax-nav-item-yale-mentors"><a href="#yale-mentors"><span class="nav-title">Yale Mentors</span></a></li>      <li id="parallax-nav-item-princeton-mentors"><a href="#princeton-mentors"><span class="nav-title">Princeton Mentors</span></a></li>      <li id="parallax-nav-item-columbia-mentors"><a href="#columbia-mentors"><span class="nav-title">Columbia Mentors</span></a></li>      <li id="parallax-nav-item-upenn-mentors"><a href="#upenn-mentors"><span class="nav-title">UPenn Mentors</span></a></li>      <li id="parallax-nav-item-cornell-mentors"><a href="#cornell-mentors"><span class="nav-title">Cornell Mentors</span></a></li>      <li id="parallax-nav-item-dartmouth-mentors"><a href="#dartmouth-mentors"><span class="nav-title">Dartmouth Mentors</span></a></li>      <li id="parallax-nav-item-swarthmore-mentors"><a href="#swarthmore-mentors"><span class="nav-title">Swarthmore Mentors</span></a></li>      <li id="parallax-nav-item-duke-mentors"><a href="#duke-mentors"><span class="nav-title">Duke Mentors</span></a></li>    </ul>
@@ -190,47 +220,56 @@ a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=Im
           </div>
         </div>
 	      <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1399156215392" id="page-53651c1fe4b03c13e876d174"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="row sqs-row"><div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_10_1_1_1399148497382_1372439"><div class="sqs-block-content"><div style="font-weight:bold;color:#800000;">
-  Harvard University<br>
-  Columbia University<br>
-  UC - Berkeley<br>
-  UC - Los Angeles<br>
-  UC - San Diego<br>
-  Ohio State University<br>
-  Cooper Union<br>
-  Johns Hopkins University<br>
-  University of Chicago
-</div></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_10_1_1_1399148497382_1373343"><div class="sqs-block-content"><div style="font-weight:bold;color:#800000;">
-  Princeton University<br>
-  MIT<br>
-  Duke University<br>
-  Tufts University<br>
-  Northeastern University<br>
-  University of Virginia<br>
-  University of Sciences<br>
-  Wesleyan University<br>
-  Carnegie Mellon University
-</div></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_10_1_1_1399148497382_1373962"><div class="sqs-block-content"><div style="font-weight:bold;color:#800000;">
-  Dartmouth University<br>
-  CalTech<br>
-  Northwestern University<br>
-  Villanova University<br>
-  Fordham University<br>
-  University of North Carolina<br>
-  Georgetown University<br>
-  University of Tampa<br>
-  University of Michigan<br>
-</div></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_10_1_1_1399148497382_1374586"><div class="sqs-block-content"><div style="font-weight:bold;color:#800000;">
-  Cornell University<br>
-  Brown University<br>
-  St. John's University<br>
-  Rutgers University<br>
-  Pennsylvania State University<br>
-  University of Southern California<br>
-  Boston College<br>
-  Boston University<br>
-  New York University
-</div></div></div></div></div><div class="row sqs-row"><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1376028"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div></div><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1376436"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div></div><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1377249"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div></div></div><div class="row sqs-row"><div class="col sqs-col-3 span-3"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1399148497382_1383896"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-2 span-2"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1380083"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div></div><div class="col sqs-col-2 span-2"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1399148497382_1382715"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-2 span-2"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1381105"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1399148497382_1385155"><div class="sqs-block-content">&nbsp;</div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1392891"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div><div class="row sqs-row"><div class="col sqs-col-4 span-4"><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_10_1_1_1399148497382_1394896"><div class="sqs-block-content">
-	<div class="image-block-outer-wrapper layout-caption-overlay ">		<div class="intrinsic" style="max-width:500.0px;">				<a href="#harvard-mentors" >				<div style="padding-bottom:100.0%;" class="image-block-wrapper   " data-description="&lt;p&gt;&lt;strong&gt;HARVARD MENTORS&lt;/strong&gt;&lt;/p&gt;">
+          Harvard University<br>
+          Columbia University<br>
+          UC - Berkeley<br>
+          UC - Los Angeles<br>
+          UC - San Diego<br>
+          Ohio State University<br>
+          Cooper Union<br>
+          Johns Hopkins University<br>
+          University of Chicago
+        </div></div></div></div>
+        <div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_10_1_1_1399148497382_1373343"><div class="sqs-block-content"><div style="font-weight:bold;color:#800000;">
+          Princeton University<br>
+          MIT<br>
+          Duke University<br>
+          Tufts University<br>
+          Northeastern University<br>
+          University of Virginia<br>
+          University of Sciences<br>
+          Wesleyan University<br>
+          Carnegie Mellon University
+        </div></div></div></div>
+        <div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_10_1_1_1399148497382_1373962"><div class="sqs-block-content"><div style="font-weight:bold;color:#800000;">
+          Dartmouth University<br>
+          CalTech<br>
+          Northwestern University<br>
+          Villanova University<br>
+          Fordham University<br>
+          University of North Carolina<br>
+          Georgetown University<br>
+          University of Tampa<br>
+          University of Michigan<br>
+        </div></div></div></div>
+        <div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_10_1_1_1399148497382_1374586"><div class="sqs-block-content"><div style="font-weight:bold;color:#800000;">
+          Cornell University<br>
+          Brown University<br>
+          St. John's University<br>
+          Rutgers University<br>
+          Pennsylvania State University<br>
+          University of Southern California<br>
+          Boston College<br>
+          Boston University<br>
+          New York University
+        </div></div></div></div>
+      </div>
+
+
+        <div class="row sqs-row"><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1376028"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div></div><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1376436"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div></div><div class="col sqs-col-4 span-4"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1377249"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div></div></div><div class="row sqs-row"><div class="col sqs-col-3 span-3"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1399148497382_1383896"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-2 span-2"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1380083"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div></div><div class="col sqs-col-2 span-2"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1399148497382_1382715"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-2 span-2"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1381105"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_10_1_1_1399148497382_1385155"><div class="sqs-block-content">&nbsp;</div></div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399148497382_1392891"><div class="sqs-block-content"><h1 class="text-align-center"><strong>⇣</strong></h1></div></div><div class="row sqs-row"><div class="col sqs-col-4 span-4"><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-yui_3_10_1_1_1399148497382_1394896"><div class="sqs-block-content">
+
+
+      <div class="image-block-outer-wrapper layout-caption-overlay ">		<div class="intrinsic" style="max-width:500.0px;">				<a href="#harvard-mentors" >				<div style="padding-bottom:100.0%;" class="image-block-wrapper   " data-description="&lt;p&gt;&lt;strong&gt;HARVARD MENTORS&lt;/strong&gt;&lt;/p&gt;">
 					<noscript><img src="http://static1.squarespace.com/static/5361dc71e4b0c25f42c3d9f1/t/53656b6de4b08700007e6ca1/1399155568596/Harvard+in+Circle.min.png"  alt="HARVARD MENTORS"  /></noscript><img class="thumb-image" alt="HARVARD MENTORS" data-src="http://static1.squarespace.com/static/5361dc71e4b0c25f42c3d9f1/t/53656b6de4b08700007e6ca1/1399155568596/Harvard+in+Circle.min.png" data-image="http://static1.squarespace.com/static/5361dc71e4b0c25f42c3d9f1/t/53656b6de4b08700007e6ca1/1399155568596/Harvard+in+Circle.min.png" data-image-dimensions="500x500" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="53656b6de4b08700007e6ca1" data-type="image" />
 				</div>				</a>			<div class="image-caption-wrapper">
 				<div class="image-caption"><p><strong>HARVARD MENTORS</strong></p></div>
@@ -895,7 +934,33 @@ a[b].attributes["data-load"])+""&&ImageLoader.load(a[b])}};window.ImageLoader=Im
           <div class="back-to-top-link"><a href="#top"><span class="arrow"></span>Top</a></div>
           <div class="footer-wrapper">
             <div id="secondaryNav" data-content-field="navigation-secondaryNav">            </div>
-            <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1459996602182" id="footerBlocks"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-713fe491a2c303b33937"><div class="sqs-block-content"><h2>Global Locations</h2></div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_10_1_1_1399020643166_58865"><div class="sqs-block-content"><hr /></div></div><div class="row sqs-row"><div class="col sqs-col-3 span-3"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399020643166_58936"><div class="sqs-block-content"><h3><strong>ANN ARBOR,&nbsp;</strong><strong>USA</strong></h3><p>University of Michigan<br />500 E Washington, Suite 200</p><p>Phone: +1 (734)&nbsp;418-8269</p></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-7121c1217e84cf6c7249"><div class="sqs-block-content"><h3><strong>SEOUL, SOUTH KOREA</strong></h3><p>대치동 948 영동대로 417<br />오토웨이타워 지하 2층</p><p><strong>연락처:</strong>&nbsp;+82 01-2127-1381</p></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-1b6f89a578577ca72675"><div class="sqs-block-content"><h3><strong>SHANGHAI, CHINA</strong></h3><p><span style="font-size:13.3333px">上海市黄浦区九江路675-685<br />号长江新能源大厦8楼</span></p><p><strong>电话：</strong><span style="font-size:13.3333px">+86 021-5234-0557</span></p></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399156616153_6257"><div class="sqs-block-content"><h3><strong>MUMBAI, INDIA</strong></h3><p>Indian Institute of Technology<br />Adi Shankaracharya Marg, Powai</p><p>Phone: +91 (981)&nbsp;920-7397</p></div></div></div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_10_1_1_1399020643166_41321"><div class="sqs-block-content"><hr /></div></div></div></div></div>
+            <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1459996602182" id="footerBlocks">
+              <div class="row sqs-row">
+                <div class="col sqs-col-12 span-12">
+                  <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-713fe491a2c303b33937">
+                    <div class="sqs-block-content"><h2>Global Locations</h2>
+                    </div>
+                  </div>
+                  <div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_10_1_1_1399020643166_58865">
+                    <div class="sqs-block-content"><hr/>
+                    </div>
+                  </div>
+                  <div class="row sqs-row">
+                    <div class="col sqs-col-3 span-3">
+                      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399020643166_58936"><div class="sqs-block-content"><h3><strong>ANN ARBOR,&nbsp;</strong><strong>USA</strong></h3><p>University of Michigan<br />500 E Washington, Suite 200</p><p>Phone: +1 (734)&nbsp;418-8269</p></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-7121c1217e84cf6c7249"><div class="sqs-block-content"><h3><strong>SEOUL, SOUTH KOREA</strong></h3><p>대치동 948 영동대로 417<br />오토웨이타워 지하 2층</p><p><strong>연락처:</strong>&nbsp;+82 01-2127-1381</p></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-1b6f89a578577ca72675"><div class="sqs-block-content"><h3><strong>SHANGHAI, CHINA</strong></h3><p><span style="font-size:13.3333px">上海市黄浦区九江路675-685<br />号长江新能源大厦8楼</span></p><p><strong>电话：</strong><span style="font-size:13.3333px">+86 021-5234-0557</span></p></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_10_1_1_1399156616153_6257"><div class="sqs-block-content"><h3><strong>MUMBAI, INDIA</strong></h3><p>Indian Institute of Technology<br />Adi Shankaracharya Marg</p><p>Phone: +91 (981)&nbsp;920-7397</p></div></div></div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-yui_3_10_1_1_1399020643166_41321"><div class="sqs-block-content"><hr /></div></div></div></div></div>
+                      <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1412687331982" id="footerBlocks">
+                        <div class="row sqs-row">
+                          <div class="col sqs-col-12 span-12">
+                            <div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54" id="block-yui_3_17_2_16_1412686682945_5891" padding-top="25px">
+                              <div class="sqs-block-content">
+                                <nav class="sqs-svg-icon--list social-icon-alignment-right social-icons-color-white social-icons-size-medium social-icons-shape-circle social-icons-style-knockout">
+                                  &copy; 2016 Educatrium
+                                </nav>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
           </div>
         </footer>      <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
