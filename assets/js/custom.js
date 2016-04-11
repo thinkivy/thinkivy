@@ -96,13 +96,13 @@
 		 * Home BG
 		/* ---------------------------------------------- */
 
-		// $(".screen-height").height($(window).height());
+		$(".screen-height").height($(window).height());
 
-		$(".screen-height").(typeof window.outerHeight != 'undefined')?Math.max(window.outerHeight, $(window).height()):$(window).height();
+		// $(".screen-height").(typeof window.outerHeight != 'undefined')?Math.max(window.outerHeight, $(window).height()):$(window).height();
 
 		$(window).resize(function(){
-			$(".screen-height").(typeof window.outerHeight != 'undefined')?Math.max(window.outerHeight, $(window).height()):$(window).height();
-			// $(".screen-height").height($(window).height());
+			// $(".screen-height").(typeof window.outerHeight != 'undefined')?Math.max(window.outerHeight, $(window).height()):$(window).height();
+			$(".screen-height").height($(window).height());
 		});
 
 		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
