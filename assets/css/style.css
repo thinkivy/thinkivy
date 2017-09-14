@@ -100,7 +100,7 @@ a,
 	/*font-size: 6em;*/
 	display: inline;
 	color: rgba(0,0,0,1);
-	
+
 
 }
 
@@ -316,7 +316,7 @@ textarea.form-control {
 
 .pfblock-title{
     font-weight: 200;
-    
+
 }
 
 .pfblock-subtitle {
@@ -423,7 +423,7 @@ textarea.form-control {
 /*.home-logo {
     position: absolute;
 	left: 30%;
-	
+
 	top: 20px;
 	height: auto;
 	max-width: 40%;
@@ -501,7 +501,7 @@ textarea.form-control {
 		-ms-transform: translate(0%, -50%);
 		 -o-transform: translate(0%, -50%);
 			transform: translate(0%, -50%);*/
-	
+
 }
 
 /* ---------------------------------------------- /*
@@ -652,7 +652,7 @@ textarea.form-control {
 	margin: 0;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
-	
+
 }
 
 .navbar-custom,
@@ -669,10 +669,10 @@ textarea.form-control {
 	color: #222;
 }
 
-.navbar .navbar-brand #imageBrand{ 
+.navbar .navbar-brand #imageBrand{
     height: 20px; /* you can use % */
     margin-top : 0px;
-    width: auto; 
+    width: auto;
 }
 
 .navbar-custom .nav li.active,
@@ -940,7 +940,7 @@ textarea.form-control {
 	font-weight: 800;
 	display: block;
 	background-color: rgba(0,0,0,.7);
-	
+
 }
 
 .grid figure h2 span {
@@ -1020,7 +1020,7 @@ figure.effect-bubba h2 {
     margin-left: -100%;
     margin-right:-100%;
 
-   
+
 }
 
 figure.effect-bubba p {
@@ -1190,7 +1190,7 @@ figure.effect-bubba:hover p {
 
 .cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
 .no-js .cbp-qtrotator .cbp-qtcontent {
-	position: relative; 
+	position: relative;
 	z-index: 100;
 	pointer-events: auto;
 	opacity: 1;
@@ -1243,7 +1243,7 @@ figure.effect-bubba:hover p {
 }
 
 /* Example for media query */
-@media screen and (max-width: 30.6em) { 
+@media screen and (max-width: 30.6em) {
 
 	.cbp-qtrotator {
 		font-size: 70%;
@@ -1393,7 +1393,7 @@ figure.effect-bubba:hover p {
  	margin-bottom: 5px;
 	color: #fff;
 	margin-bottom:10px;
-  
+
 }
 
 .chevron:before {
@@ -1409,12 +1409,12 @@ figure.effect-bubba:hover p {
 	-o-transform: skew(0deg, 8deg);
 	transform: skew(0deg, 8deg);
 	background-color: #9a0000;
-	
-  
+
+
   -moz-box-shadow: 0 0 0 2px #9a0000;
 	-webkit-box-shadow: 0 0 0 2px #9a0000;
 	box-shadow: 0 0 0 2px #9a0000;
-  
+
   /*border-left: 1px dashed #fff;
   border-top: 1px dashed #fff;
   border-bottom: 1px dashed #fff;*/
@@ -1432,11 +1432,11 @@ figure.effect-bubba:hover p {
 	-o-transform: skew(0deg, -8deg);
 	transform: skew(0deg, -8deg);
 	background-color: #9a0000;
-  
+
   -moz-box-shadow: 0 0 0 2px #9a0000;
 	-webkit-box-shadow: 0 0 0 2px #9a0000;
 	box-shadow: 0 0 0 2px #9a0000;
-  
+
 /*  border-right: 1px dashed #fff;
   border-top: 1px dashed #fff;
   border-bottom: 1px dashed #fff;*/
@@ -1477,7 +1477,7 @@ figure.effect-bubba:hover p {
 }
 
 #testprep-intro .info-point{
-	
+
 	margin-bottom: 30px;
 }
 
@@ -1564,16 +1564,16 @@ figure.effect-bubba:hover p {
 }
 
 
-#testprep-table .table tr > td:first-child { 
+#testprep-table .table tr > td:first-child {
 	font-weight: bold;
-} 
+}
 
 #testprep-table .table tbody > tr > td,
-#testprep-table .table thead > tr > th{ 
+#testprep-table .table thead > tr > th{
 	text-align: center;
 }
 
-#testprep-table .table tbody > tr > td:first-child{ 
+#testprep-table .table tbody > tr > td:first-child{
 	text-align: left;
 	width: 20%;
 
@@ -1607,7 +1607,7 @@ figure.effect-bubba:hover p {
 	width: 100%;
 	height: auto;
 	/*max-height: 300px;*/
-	
+
 }
 
 
@@ -1619,7 +1619,7 @@ figure.effect-bubba:hover p {
   	justify-content: center;
   	flex-direction: column;
 
-	
+
 }
 
 .block-text p{
