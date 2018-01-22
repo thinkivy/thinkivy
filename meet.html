@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Educatrium Connect</title>
+    </head>
+    <body>
+        <script src="https://13.228.227.68/libs/external_api.js"></script>
+        <script>
+            var domain = "13.228.227.68";
+            var room = "SecretRoom";
+            var width = 700;
+            var height = 600;
+            var htmlElement = undefined;
+            var configOverwrite = {};
+            var interfaceConfigOverwrite = {
+                filmStripOnly: false,
+                SHOW_JITSI_WATERMARK: false,
+                SHOW_WATERMARK_FOR_GUESTS: false
+            };
+            var api = new JitsiMeetExternalAPI(domain, room, width, height,
+                htmlElement, configOverwrite, interfaceConfigOverwrite);
+        </script>
+    </body>
+</html>
